@@ -52,13 +52,15 @@ function sumbitQuiz() {
   }
 
   if (points <= 1) {
-    finalResult = "0-10% monkee. You are barely monkey, smh, you make monkee very sad ;(.";
+    finalResult =
+      "0-10% monkee. You are barely monkey, smh, you make monkee very sad ;(.";
   } else if (points >= 2 && points <= 3) {
-    finalResult = "40-60% monkee. You are human which is okee but you not monkee enough!";
+    finalResult =
+      "40-60% monkee. You are human which is okee but you not monkee enough!";
   } else {
     finalResult =
       "80-100% monkee, sugoi desu ne! You make monkee very jumpy happy! Have a banana!";
-    }
+  }
   document.querySelector(".percent-monkey").innerHTML = finalResult;
   questions[currentQuestion].classList.toggle("question");
   document.querySelector(".result").classList.toggle("invisible");

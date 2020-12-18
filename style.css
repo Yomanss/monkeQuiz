@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 20px;
 }
 
@@ -34,7 +34,8 @@ body {
 }
 
 legend,
-label, .result {
+label,
+.result {
   background-color: #ffffffb6;
   padding: 3px;
 }
@@ -46,4 +47,3 @@ input[type="radio"]:focus {
 .invisible {
   display: none;
 }
-
