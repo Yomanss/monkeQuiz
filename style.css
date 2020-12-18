@@ -12,13 +12,13 @@ body {
   background-image: url(funnemonkee.jpg);
 }
 
-#text1 {
+.text1 {
   background-color: #ffffffd8;
   margin: 1rem auto;
   width: 50vw;
 }
 
-form {
+.quiz {
   margin: auto;
   height: 100%;
   background-image: url(background.jpg);
@@ -26,7 +26,7 @@ form {
   width: 30vw;
 }
 
-form .question {
+.quiz .question {
   border: none;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ form .question {
 }
 
 legend,
-label {
+label, .result {
   background-color: #ffffffb6;
   padding: 3px;
 }
@@ -46,3 +46,4 @@ input[type="radio"]:focus {
 .invisible {
   display: none;
 }
+

@@ -8,13 +8,21 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="text1">
-      Hello and welcome to monkee quiz. You want to know if you monkee? ou want
-      to see how many percent monkee? Take monkee quiz and become a monkee!!!
-    </p>
-    <form autocomplete="off">
+    <div class="text1">
+      <p>
+        Hello and welcome to monkee quiz. You want to know if you monkee? ou
+        want to see how many percent monkee? Take monkee quiz and become a
+        monkee!!!
+      </p>
+      <button type="button" class="srtBtn invisible" onclick="startQuiz()">
+        Lets start!
+      </button>
+    </div>
+    <form autocomplete="off" class="quiz">
       <div class="question">
-        <legend>Question 1: What is the name of the first moneky in space</legend>
+        <legend>
+          Question 1: What is the name of the first moneky in space
+        </legend>
         <label> <input type="radio" name="fraga" value="0" />Martine </label>
         <label> <input type="radio" name="fraga" value="1" />Albert </label>
         <label> <input type="radio" name="fraga" value="0" />Kong </label>
@@ -23,8 +31,12 @@
       <div class="question">
         <legend>Question 2: What are the largest monkeys</legend>
         <label> <input type="radio" name="fraga1" value="0" />Gorilla </label>
-        <label> <input type="radio" name="fraga1" value="0" />Black squirrel monkey </label>
-        <label> <input type="radio" name="fraga1" value="0" />Silver Woolly monkey </label>
+        <label>
+          <input type="radio" name="fraga1" value="0" />Black squirrel monkey
+        </label>
+        <label>
+          <input type="radio" name="fraga1" value="0" />Silver Woolly monkey
+        </label>
         <label> <input type="radio" name="fraga1" value="1" />Mandrills </label>
       </div>
       <div class="question">
@@ -39,18 +51,32 @@
         <label> <input type="radio" name="fraga3" value="1" />Of course </label>
         <label> <input type="radio" name="fraga3" value="0" />No </label>
         <label> <input type="radio" name="fraga3" value="0" />Maybe </label>
-        <label> <input type="radio" name="fraga3" value="0" />Somewhat related </label>
+        <label>
+          <input type="radio" name="fraga3" value="0" />Somewhat related
+        </label>
       </div>
       <div class="question">
         <legend>Question 4: Human = monkee?</legend>
         <label> <input type="radio" name="fraga3" value="1" />Of course </label>
         <label> <input type="radio" name="fraga3" value="0" />No </label>
         <label> <input type="radio" name="fraga3" value="0" />Maybe </label>
-        <label> <input type="radio" name="fraga3" value="0" />Somewhat related </label>
+        <label>
+          <input type="radio" name="fraga3" value="0" />Somewhat related
+        </label>
       </div>
-      <button type="button" onclick="myFucktion()">Next</button>
-      <button type="button">Bak</button>
-      <button type="button" class="invisible">Skicka in!</button>
+      <div class="result invisible">
+        <h1>You are <span class="percent-monkey">0</span></h1>
+      </div>
+      <button type="button" class="nxtBtn invisible" onclick="myFucktion()">Next</button>
+      <button type="button" class="backBtn invisible">Back</button>
+      <div>
+        <button type="button" class="subBtn invisible" onclick="sumbitQuiz()">
+          Submit!
+        </button>
+        <button type="button" class="resBtn invisible" onclick="resetQuiz()">
+          Reset
+        </button>
+      </div>
     </form>
   </body>
 </html>
